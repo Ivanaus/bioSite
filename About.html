@@ -9,23 +9,36 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div id="header-navbar">
-                <img id="icon-navbar" src="images/Icon.jpg" alt="Greenbean" width="160" height="80">
-                <a href="Home.html">Dez Hassan</a>
-                <a href="Hobbies.html" id="button1">Hobbies</a>
-                <a href="About.html" id="button2">About</a> 
+        <div id="wrapper">
+            <header>
+                <img id="logo" src="images/Icon.jpg" alt="Greenbean">
+                <a id="home-nav" href="Home.html">Dez Hassan</a>
+                <button onclick="location.href ='Hobbies.html';">Hobbies</button>
+                <button onclick="location.href ='About.html';">About</button>
+            </header>
+            <div id="about-content">
+                <div class="description">
+                    <h1>Get to know me</h1>
+                </div>
+                <div class="container">
+                    <div id="about-pic">
+                        <img id="about-img" src="images/Dez-About.jpg" alt="Dez Hassan">
+                    </div>
+                    <div id="bio">
+                        <p>Dez Hassan was born in the spring of 1998 in South Omaha. They grew up in Omaha and have a strong connection to their community. They are the second youngest of nine siblings, of which three are step-siblings and six are half-siblings. They are close to a good portion of their family; their grandmother was a crucial part of their life. They have always believed that empathetically connecting with others is essential to a community. As such, their goal is to work with small business owners. In the future, their goal is to work as a project manager for local small businesses and nonprofits.</p>
+                        <p>They are currently married and have no plans to have children. They have no pets and no plan to have any. They spend most of their time focusing on their business and other projects. If they aren't working on anything actively, you can find them playing a game on their Nintendo Switch or scrolling TikTok.</p>
+                        <p>They can always find a deal; they have taken their ability to coupon and obtain discounts to provide essential items for their local shelter. They have worked on several projects for their environment, including several local cleanups. They are spearheading a project to develop a native flower garden in their community.</p>
+                        <p>Currently, they are self-employed, working with individual clients, mostly cleaning and organizing. They recently started working with a small business that sells enamel pins and other small collectibles, aligning with their interests. Overall, they enjoy their current work and will miss it once they have moved on to other avenues.</p>
+                    </div>
+                </div>    
             </div>
-        </header>
-        <div id="content">
-
+            <footer>
+                <ul id="footer">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Hobbies.html">Hobbies</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </footer>
         </div>
-        <footer>
-            <div id="footer-navbar">
-                <a href="Home.html">Home</a>
-                <a href="Hobbies.html">Hobbies</a>
-                <a href="About.html">About</a> 
-            </div>
-        </footer>
     </body>
 </html>

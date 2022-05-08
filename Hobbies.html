@@ -9,23 +9,46 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div id="header-navbar">
-                <img id="icon-navbar" src="images/Icon.jpg" alt="Greenbean" width="160" height="80">
-                <a href="Home.html">Dez Hassan</a>
-                <a href="Hobbies.html" id="button1">Hobbies</a>
-                <a href="About.html" id="button2">About</a> 
+        <div id="wrapper">
+            <header>
+                <img id="logo" src="images/Icon.jpg" alt="Greenbean">
+                <a id="home-nav" href="Home.html">Dez Hassan</a>
+                <button onclick="location.href ='Hobbies.html';">Hobbies</button>
+                <button onclick="location.href ='About.html';">About</button>
+            </header>
+            <div id="hobbies-content">
+                <div class="description">
+                    <h1>Here's What I Like</h1>
+                </div>
+                <div class="container">
+                    <div id="hobbies-pic-1">
+                        <img id="hobbies-img-1" src="images/Hobbies-Stationary.jpg" alt="Vintage Stationary">
+                    </div>
+                    <div id="hobbie-1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div id="hobbies-pic-2">
+                        <img id="hobbies-img-2" src="images/Hobbies-Flag.jpg" alt="Pin Flag">
+                    </div>
+                    <div id="hobbie-2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div id="hobbies-pic-3">
+                        <img id="hobbies-img-3" src="images/Hobbies-Games.jpg" alt="Nintendo Switch Menu">
+                    </div>
+                    <div id="hobbie-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    
+                </div>    
             </div>
-        </header>
-        <div id="content">
-
+            <footer>
+                <ul id="footer">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Hobbies.html">Hobbies</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </footer>
         </div>
-        <footer>
-            <div id="footer-navbar">
-                <a href="Home.html">Home</a>
-                <a href="Hobbies.html">Hobbies</a>
-                <a href="About.html">About</a> 
-            </div>
-        </footer>
     </body>
 </html>
