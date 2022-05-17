@@ -100,15 +100,15 @@ footer a {
 }
 #card-pic-1 {
     width: 44%;
-    padding: 0 6%;
+    padding: 0 1% 0 11%;
 }
 #card-pic-2 {
-    width: 31%;
-    padding: 0 6%;
+    width: 31.18%;
+    padding: 0 6% 0 1%;
 }
 #card-pic-3 {
     width: 71%;
-    padding: 0 14%;
+    padding: 2% 14%;
 }
 #garden-pic {
     width: 81%;
@@ -120,7 +120,20 @@ footer a {
 }
 #card-description, #garden-description {
     text-align: center;
-    margin: auto;
+    margin: auto 10%;
+}
+#artists {
+    list-style: none;
+}
+#artists li {
+    font-size: 1.25rem;
+}
+#artists a {
+    color: black;
+    text-decoration: none;
+}
+#artists a:hover {
+    background-color: #e3a7fd;
 }
 #instagram {
     margin: auto;
@@ -130,17 +143,25 @@ footer a {
     display: flex;
     flex-wrap: wrap;
 }
-#hobbies-pic-1, #hobbies-pic-2, #hobbies-pic-3 {
-    width: 50%;
-    padding: 2% 6%;
+#hobbies-pic-1 {
+    width: 40%;
+    padding: 2% 6% 2% 6%;
+}
+#hobbies-pic-2{
+    width: 40%;
+    padding: 2% 6% 2% 6%;
+}
+#hobbies-pic-3 {
+    width: 40%;
+    padding: 12% 6% 2% 6%;
 }
 #hobbies-pic-1 img, #hobbies-pic-2 img, #hobbies-pic-3 img {
     max-width: 100%;
     max-height: 100%;
 }
 #hobbie-1, #hobbie-2, #hobbie-3 {
-    width: 20%;
-    padding: 0 11% 0 6%;
+    width: 42%;
+    padding-right: 6%;
 }
 /*about*/
 #about-content .container {
