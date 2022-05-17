@@ -59,6 +59,9 @@ header img {
     font-size: 2.441rem;
     text-decoration: none;
 }
+header a {
+    color: black;
+}
 header button {
     background-color: #e3a7fd;
     border: #595959;
