@@ -2,14 +2,15 @@ body {
     font-family: "Comfortaa", sans-serif;
     color: black;
     background-image: url(images/background.jpg);
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
 }
 #wrapper {
     background-color: #fef3d9;
-    width: 960px;
-    min-width: 960px;
+    width: 100%;
+    max-width: 1080px;
+    min-width: 720px;
     align-content: center;
     margin: auto;
 }
@@ -54,9 +55,9 @@ header img {
 }
 #home-nav {
     font-weight: 700;
-    margin: 0 0 0 -5%;
+    margin: 0 0 0 -7%;
     vertical-align: middle;
-    font-size: 2.441rem;
+    font-size: 1.953rem;
     text-decoration: none;
 }
 header a {
@@ -78,7 +79,7 @@ header button:hover {
 footer {
     background-color: #7987a0;
     text-align: center;
-    padding: 5% 0;
+    padding: 1% 0;
 }
 #footer {
     list-style: none;
@@ -145,26 +146,20 @@ footer a {
 #hobbies-content .container {
     display: flex;
     flex-wrap: wrap;
+    align-items: start;
 }
-#hobbies-pic-1 {
+#hobbies-pic-1, #hobbies-pic-2, #hobbies-pic-3 {
     width: 40%;
-    padding: 2% 6% 2% 6%;
-}
-#hobbies-pic-2{
-    width: 40%;
-    padding: 2% 6% 2% 6%;
-}
-#hobbies-pic-3 {
-    width: 40%;
-    padding: 12% 6% 2% 6%;
+    margin: 2% 6% 2% 6%;
+    padding-top: 1.563rem;
 }
 #hobbies-pic-1 img, #hobbies-pic-2 img, #hobbies-pic-3 img {
     max-width: 100%;
     max-height: 100%;
 }
 #hobbie-1, #hobbie-2, #hobbie-3 {
-    width: 42%;
-    padding-right: 6%;
+    width: 40%;
+    margin-right: 6%;
 }
 /*about*/
 #about-content .container {
