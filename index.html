@@ -2,6 +2,7 @@
 <html lang="en-us">
     <head>
         <title>Dez Hassan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="images/Icon.jpg">
         <link href="bioSite.css" type="text/css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +22,45 @@
                     <h1>Portfolio</h1>
                 </div>
                 <div class="container">
-                    <div id="card-pic-1">
-                        <img id="card-img-1" src="images/Landing-Card-1.jpg" alt="Various Cards">
-                    </div>
-                    <div id="card-pic-2">
-                        <img id="card-img-2" src="images/Landing-Card-2.jpg" alt="Completed Pack">
-                    </div>
-                    <div id="card-pic-3">
-                        <img id="card-img-3" src="images/Landing-Card-3.jpg" alt="Front and Back">
+                    <div class="slideshow">
+                        <div class="slide">
+                            <img src="images/Landing-qween_of_cups.jpg" width="100%">
+                            <div class="slideDescription">
+                                <a href="https://www.instagram.com/qween_of_cups/" target="_blank">@qween_of_cups</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/Landing-keelavangrinsven.jpg" width="100%">
+                            <div class="slideDescription">
+                                <a href="https://www.instagram.com/keelavangrinsven/" target="_blank">@keelavangrinsven</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/Landing-_uhmeri.jpg" width="100%">
+                            <div class="slideDescription">
+                                <a href="https://www.instagram.com/_uhmeri/" target="_blank">@_uhmeri</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/Landing-carolynmooreart.jpg" width="100%">
+                            <div class="slideDescription">
+                                <a href="https://www.instagram.com/carolynmooreart/" target="_blank">@carolynmooreart</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/Landing-ilaamen.jpg" width="100%">
+                            <div class="slideDescription">
+                                <a href="https://www.instagram.com/ilaamen/" target="_blank">@ilaamen</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/Landing-Finished.jpg" width="100%">
+                            <div class="slideDescription">
+                                <a href="https://www.instagram.com/blue.finn.tuna/" target="_blank">@blue.finn.tuna</a>
+                            </div>
+                        </div>
+                        <button id="leftButton" onclick="changeImg(-1)">&#10094;</button>
+                        <button id="rightButton" onclick="changeImg(1)">&#10095;</button>
                     </div>
                     <div id="card-description">
                         <h2>Thank You Bags</h2>
@@ -69,5 +101,24 @@
                 </ul>
             </footer>
         </div>
+        <script>
+            var slideIndex = 1;
+            showImg(slideIndex);
+            
+            function changeImg(n) {
+            showImg(slideIndex += n);
+            }
+            
+            function showImg(n) {
+            var i;
+            var x = document.getElementsByClassName("slide");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+        </script>
     </body>
 </html>
